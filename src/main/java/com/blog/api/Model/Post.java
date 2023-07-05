@@ -1,12 +1,14 @@
-package com.blog.api.Controller.Model;
+package com.blog.api.Model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import org.springframework.hateoas.RepresentationModel;
+
 
 @Entity
-public class Post {
+public class Post extends RepresentationModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
